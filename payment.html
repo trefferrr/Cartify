@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title><link rel = "icon" type = "image/x-icon" href = "data:image/png;base64,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">
+    <link rel="stylesheet" href="./style/payment.css">
+</head>
+<body>
+    <div class = "header">
+        <img class = "cartifyLogo" src ="img/features/images.png" style="border-radius:60%; height:45px">
+        <div class = "headerCenter">
+            <a href = "   ">BAG --------</a>
+            <a onclick="doadd()" href = "./add.html">ADDRESS --------</a>
+             <a style="color: rgb(72, 19, 207);" href = "C:\Users\HP\Desktop\project\payment.html">PAYMENT</a>   
+        </div>
+        <div class = "headerRight">
+            <img class = "image2" src = "https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"/>
+            <h4 style = "float: right;">100% SECURE</h4>
+        </div>
+    </div>
+    <div>
+        <div class = "container4">
+            <h4>Bank Offer</h4>
+            <p>
+                . 10% Instant Discount on RBL Bank Credit and Debit Cards on a minimum spend of 2500. TCA<br><br>
+                <span id = "tca">...</span><span id = "more">
+                . 10% Instant Discount with Standard Chartered Credit and Debit Cards on a minimum spend of 2500. TCA<br><br>
+                . 5% Unlimited Cashback on Flipkart Axis Bank Ctedit Card TCA<br><br>
+                . 10% Cashback upto Rs 250 on a minimum spend of Rs 1000 with PayZapp TCA<br><br>
+                . Upto Rs 500 Cashback on Mobikwik wallet transaction of min Rs 999. Use code MBK500 on mobikwik TCA<br><br>
+                . Flat Rs 200 Cashback on first Airtel Payments Bank transcation on cartify on a min spend of Rs 2000 TCA</span>
+            </p>
+            <button onclick="showMore()" id="myBtn">Show More</button>
+        </div>
+        <div class = "grid">
+            <div class = "container4">
+                <h3>Choose Payment Method</h3>
+                <div class = "parent">
+                    <button id = "child1" class = "btn">CREDIT/DEBIT CARD</button>
+                    <button id = "child2" class = "btn">NET BANKING</button>
+                    <button id = "child3" class = "btn">PAYTM/PAYZAPP WALLET</button>
+                    <button id = "child4" class = "btn">UPI</button>
+                    <button id = "child5" class = "btn">CASH ON DELIVERY</button>
+                    <div id = "child6">
+                        <h4>CREDIT/DEBIT CARD</h4>
+                        <form id = "myForm">
+                            <input id = "formClass" type = "number" placeholder="Card Number"><br>
+                            <input id = "formClass1" type="text" placeholder="Name On Card"/><br>
+                            <input id = "valid" type = "number" placeholder="Valid Thru(MM/YY)"/>
+                            <input id = "cvv" type="password" placeholder="CVV"/>
+                        </form>
+                            <input type="checkbox" id = "checkBox"/>
+                            <label for="checkBox" style = "font-size: 14px; margin-left: 8px;">Save this card for faster payment</label>
+                            <button id = "myBtn2" onclick="successfulPayment()">PAY NOW</button>
+                    </div>
+                </div>
+            </div> 
+        </div>       
+                <div class = "footer"> 
+                    <div class = "container3">
+                        <img  class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-ssl.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-visa.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-mc.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-ae.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-dc.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-nb.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-cod.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-rupay.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-paypal.png"/>
+                        <img class = "images" src = "https://constant.myntassets.com/checkout/assets/img/footer-bank-bhim.png"/>
+
+                    </div>
+                    
+                        <a class = "contact" href= ""><span>Need Help? Contact Us</span></a>
+                    
+
+                </div>
+</body>
+</html>
+<script src="./script/payment.js" ></script>
